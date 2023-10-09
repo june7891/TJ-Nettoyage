@@ -201,11 +201,19 @@ blockquote {
 }
 
 .tm-hero-title {
+  position:absolute;
+  top: 30%;
+  left: 5%;
   font-size: 5rem;
   text-shadow: 2px 2px 2px #333;
+  z-index: 20;
 }
 
 .tm-hero-subtitle {
+  position: absolute;
+  top: 45%;
+  left: 5%;
+  z-index: 20;
   font-size: 2rem;
   text-shadow: 1px 1px 1px #000000;
 }
@@ -215,6 +223,7 @@ blockquote {
   bottom: 100px;
   left: 0;
   right: 0;
+  z-index: 20;
 }
 
 @media (max-height: 480px) {
@@ -298,7 +307,7 @@ blockquote {
 .tm-bg-overlay {
   width: 100%;
   height: 100%;
-  background: rgba(6, 24, 28, 0.2);
+  background: rgba(74, 80, 80, 0.2);
   position: absolute;
   top: 0;
   left: 0;
@@ -656,6 +665,14 @@ p {
     margin-right: auto;
   }
 
+  .tm-hero-title{
+    font-size: 4rem;
+  }
+
+  .tm-hero-subtitle{
+    font-size: 1.5rem;
+  }
+
   .tm-intro-img {
     display: block;
     margin-left: auto;
@@ -666,6 +683,9 @@ p {
     margin-left: 0;
     margin-top: 20px;
   }
+  .tm-intro-next{
+    bottom: 30px;
+  }
 }
 
 @media (max-width: 767px) {
@@ -673,6 +693,10 @@ p {
   .navbar-nav {
     max-width: 200px;
     text-align: right;
+  }
+
+  .tm-hero-subtitle{
+    font-size: 1.1rem;
   }
 
   .navbar-collapse {
@@ -684,6 +708,9 @@ p {
   .navbar-collapse .nav-link {
     color: #707070;
 	padding-right: 20px;
+  }
+  .tm-intro-next{
+    bottom: 20px;
   }
 }
 
@@ -698,6 +725,17 @@ p {
     max-width: 350px;
   }
 
+  .tm-hero-subtitle{
+    top: 73%;
+    text-align: center;
+  }
+  .tm-hero-title{
+    top: 45%;
+  }
+
+  .tm-intro-next{
+    bottom: 10px;
+  }
   .slick-dots li {
     margin: 0 8px;
   }
